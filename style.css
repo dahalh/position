@@ -1,0 +1,48 @@
+body{
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+/* positions: static | relative | absolute | fixed | sticky | initial | inherit */
+
+.parent{
+    background-color: lightseagreen;
+    min-height: 100vh;
+    padding: 1rem;
+
+    position: relative;
+
+}
+
+.parent > div{
+    height: 150px;
+    padding: 1rem;
+
+}
+
+.child1{
+    background: red;
+    position: relative;
+    bottom: 20px;
+    left: -30px;
+}
+
+.child2{
+    background: green;
+}
+
+.child3{
+    background: grey;
+    /* position: absolute; */
+    bottom: 10px;
+    right: 10px;
+    /* top:10px;
+    left: 200px; */
+    position: fixed;
+}
+
+.sticky{
+    background: grey;
+    position: sticky;
+    top: 0px;
+}
